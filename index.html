@@ -9,94 +9,86 @@
 </head>
 <body>
     <header>
+        <a href="#"><img src="" alt="obrázek loga">[obrázek loga]</a>
         <nav>
-            <a href="#uvod">Úvod</a>
             <a href="#o-mne">O mně</a>
-            <a href="#sluzby-a-cenik">Služby a ceník</a>
-            <a href="#darkove-poukazy">Dárkové poukazy</a>
+            <a href="#nabidka">Nabídka</a>
             <a href="#reference">Reference</a>
-            <a href="#kontakt-a-objednani">Kontakt a objednání</a>
-            <a href="#lokalita">Lokalita</a>
             <a href="#galerie">Galerie</a>
+            <a href="#kontakt-a-objednani">Kontakt a objednání</a>
         </nav>
     </header>
 
     <main>
         <section id="uvod">
             <h1>Zdravotní masáže Chodov</h1>
-            <p>[Pár vět o tom, co nabízí]</p>
+            <p>[jeden krásný citát/zajímavost]</p>
             <a href="#kontakt-a-objednani" class="objednat-se">Objednat se</a>
-            <p>[jak se objednat : přes telefon nebo e-mail]</p>
+            <p>[jak se objednat: přes telefon nebo e-mail]</p>
+            <p>[kdy je otevřeno]</p>
         </section>
 
         <section id="o-mne">
             <h2>Moje zkušenosti jako masérka</h2>
             <p>[odstavec o tom, kdo je, jak dlouho to dělá, její handicap atd.]</p>
+            <p>[další krásný citát/zajímavost, např.: že hůř vidí, ale zato má skvělý hmat pohnaný 23 lety zkušeností, který najde napjatá místa v těle]</p>
             <h3>Certifikáty</h3>
             <a href="#certifikaty">Zobrazit všechny certifikáty</a>
         </section>
 
-        <section id="sluzby-a-cenik">
+        <section id="nabidka">
             <h2>Druhy masáží a ceny</h2>
-            <article>
+            <article class="sluzba"> <!-- v mobilu budou články pod sebou, ale na PC budou 3 vedle sebe a pak řádek dolů a zase 3 vedle sebe... -->
                 <h3>[Název 1]</h3>
-                <p>[popis 1]</p>
+                <p>[1 větou popis + 1–2 větami, k čemu je určena]</p>
+                <p>[zajímavost 1]</p>
                 <p class="cena">[cena 1]</p>
             </article>
-            <article>
+
+            <article class="sluzba">
                 <h3>[Název 2]</h3>
-                <p>[popis 2]</p>
+                <p>[1 větou popis + 1–2 větami, k čemu je určena]</p>
+                <p>[zajímavost 2]</p>
                 <p class="cena">[cena 2]</p>
             </article>
-            <article>
+
+            <article class="sluzba">
                 <h3>[Název 3]</h3>
-                <p>[popis 3]</p>
+                <p>[1 větou popis + 1–2 větami, k čemu je určena]</p>
+                <p>[zajímavost 3]</p>
                 <p class="cena">[cena 3]</p>
             </article>
-            <article>
+
+            <article class="sluzba">
                 <h3>[Název 4]</h3>
-                <p>[popis 4]</p>
+                <p>[1 větou popis + 1–2 větami, k čemu je určena]</p>
+                <p>[zajímavost 4]</p>
                 <p class="cena">[cena 4]</p>
             </article>
-            <article>
+
+            <article class="sluzba">
                 <h3>[Název 5]</h3>
-                <p>[popis 5]</p>
+                <p>[1 větou popis + 1–2 větami, k čemu je určena]</p>
+                <p>[zajímavost 5]</p>
                 <p class="cena">[cena 5]</p>
             </article>
 
-            <h2>Důležité informace před masáží</h2>
+            <h3>Důležité informace před masáží</h3>
             <ul>
                 <li>Neposkytuji erotické služby</li> <!-- zvýraznit text -->
                 <li>[věc 1]</li>
                 <li>[věc 2]</li>
                 <li>[věc 3]</li>
             </ul>
-        </section>
 
-        <section id="darkove-poukazy">
-            <h2>Dárkové poukazy</h2>
-            <p>[jak koupit]</p>
-            <p>[platnost a podmínky]</p>
-            <!-- tady ještě později bude tlačítko koupit a v JS se to udělá, ale budu muset zjistit jak. Teď to neřešit! Až budeme u konce a budeme dělat detaily v JS (což bude asi až po CSS), tak se k tomu dostaneme -->
+            <h3>Dárkové poukazy</h3>
+            <p>[dárkové poukazy mají platnost 1 rok, tj. 365 dní od zakoupení]</p>
+            <a href="#kontakt-a-objednani">Darovat masáž</a>
         </section>
 
         <section id="reference">
             <h2>Reference</h2>
             <!-- tady nějak udělat, aby šlo přidávání referencí (to bude asi těžké, řešit až ke konci) -->
-        </section>
-
-        <section id="kontakt-a-objednani">
-            <h2>Kontakt a objednání</h2>
-            <a href="tel:+[telefon]">[telefon]</a>
-            <a href="mailto:[mail]">[mail]</a>
-            <!-- bonus: klientka chtěla, aby si lidé mohli zvolit přibližné termíny a časy, ona pak potvrdí např. do 1–2 dnů -->
-        </section>
-
-        <section id="lokalita">
-            <h2>Lokalita</h2>
-            <!-- přidat mapu přes iframe -->
-            <p>[napsat, jak se k ní nejrychleji dostat (metro, autobus atd., kde je východ z metra...)]</p>
-            <a href="#maserna">fotky masérny</a>
         </section>
 
         <section id="galerie">
@@ -110,6 +102,25 @@
             <div id="certifikaty">
                 <!-- fotky všech certifikátů -->
             </div>
+        </section>
+
+        <section id="kontakt-a-objednani">
+            <h2>Kontakt</h2>
+            <a href="tel:+[telefon]">[telefon]</a>
+            <a href="mailto:[mail]">[mail]</a>
+            <a href="https://wa.me/[číslo]">[whatsapp]</a>
+
+            <h3>Kde nás najdete</h3>
+            <p>[kde se nachází a jak se k ní dojít do masérny]</p> <!-- tohle je ta adresa! -->
+            <p>[mapa]</p> <!-- mapa přes iframe -->
+
+            <h3>Pracovní doba</h3>
+            <p>[pracovní doba]</p>
+            <!-- bonus: klientka chtěla, aby si lidé mohli zvolit přibližné termíny a časy, ona pak potvrdí např. do 1–2 dnů -->
+
+            <h3>Dárkový poukaz</h3>
+            <p>[pro uplatnění dárkového poukazu...]</p>
+            <button class="darkovy-poukaz">Dárkový poukaz</button>
         </section>
     </main>
 

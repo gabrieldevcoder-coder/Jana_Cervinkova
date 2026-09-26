@@ -9,40 +9,43 @@
 </head>
 <body>
     <header>
-        <a href="#"><img src="" alt="obrázek loga">[obrázek loga]</a>
+        <a href="#"><img src="" alt="obrázek loga">[obrázek loga]</a> <!-- tady přece bude to logo -->
         <nav>
-            <a href="#o-mne">O mně</a>
-            <a href="#nabidka">Nabídka</a>
-            <a href="#reference">Reference</a>
-            <a href="#galerie">Galerie</a>
+            <a href="#proc-prijit-ke-mne">Proč přijít zrovna ke mně</a>
+            <a href="#masaze-a-cenik">Masáže a ceník</a>
+            <a href="#prakticke-info">Praktické informace a reference</a>
             <a href="#kontakt-a-objednani">Kontakt a objednání</a>
+            <a href="#kontakt-a-objednani">OBJEDNAT SE</a> <!-- klientka chtěla výrazné objednat se -->
         </nav>
     </header>
 
     <main>
-        <section id="uvod">
+        <section id="proc-prijit-ke-mne">
             <h1>Zdravotní masáže Chodov</h1>
             <p>[jeden krásný citát/zajímavost]</p>
             <a href="#kontakt-a-objednani" class="objednat-se">Objednat se</a>
             <p>[jak se objednat: přes telefon nebo e-mail]</p>
             <p>[kdy je otevřeno]</p>
-        </section>
-
-        <section id="o-mne">
             <h2>Moje zkušenosti jako masérka</h2>
             <p>[odstavec o tom, kdo je, jak dlouho to dělá, její handicap atd.]</p>
+            <img src="" alt="fotka-Jany">
+            <img src="" alt="fotka-prostoru-zevnitr">
             <p>[další krásný citát/zajímavost, např.: že hůř vidí, ale zato má skvělý hmat pohnaný 23 lety zkušeností, který najde napjatá místa v těle]</p>
             <h3>Certifikáty</h3>
             <a href="#certifikaty">Zobrazit všechny certifikáty</a>
+            <article id="certifikaty">
+                <img src="" alt="fotky-certifikátů"> <!-- pár certifikátů: 1–3 + pak tlačítko "vidět víc", které ukáže zbytek -->
+            </article>
         </section>
 
-        <section id="nabidka">
+        <section id="masaze-a-cenik">
             <h2>Druhy masáží a ceny</h2>
             <article class="sluzba"> <!-- v mobilu budou články pod sebou, ale na PC budou 3 vedle sebe a pak řádek dolů a zase 3 vedle sebe... -->
                 <h3>[Název 1]</h3>
                 <p>[1 větou popis + 1–2 větami, k čemu je určena]</p>
                 <p>[zajímavost 1]</p>
                 <p class="cena">[cena 1]</p>
+                <img src="" alt="malá-fotka-masáže">
             </article>
 
             <article class="sluzba">
@@ -50,6 +53,7 @@
                 <p>[1 větou popis + 1–2 větami, k čemu je určena]</p>
                 <p>[zajímavost 2]</p>
                 <p class="cena">[cena 2]</p>
+                <img src="" alt="malá-fotka-masáže">
             </article>
 
             <article class="sluzba">
@@ -57,6 +61,7 @@
                 <p>[1 větou popis + 1–2 větami, k čemu je určena]</p>
                 <p>[zajímavost 3]</p>
                 <p class="cena">[cena 3]</p>
+                <img src="" alt="malá-fotka-masáže">
             </article>
 
             <article class="sluzba">
@@ -64,6 +69,7 @@
                 <p>[1 větou popis + 1–2 větami, k čemu je určena]</p>
                 <p>[zajímavost 4]</p>
                 <p class="cena">[cena 4]</p>
+                <img src="" alt="malá-fotka-masáže">
             </article>
 
             <article class="sluzba">
@@ -71,6 +77,7 @@
                 <p>[1 větou popis + 1–2 větami, k čemu je určena]</p>
                 <p>[zajímavost 5]</p>
                 <p class="cena">[cena 5]</p>
+                <img src="" alt="malá-fotka-masáže">
             </article>
 
             <h3>Důležité informace před masáží</h3>
@@ -80,28 +87,19 @@
                 <li>[věc 2]</li>
                 <li>[věc 3]</li>
             </ul>
+        </section>
 
+        <section id="prakticke-info">
+            <h2>Praktické informace</h2>
             <h3>Dárkové poukazy</h3>
             <p>[dárkové poukazy mají platnost 1 rok, tj. 365 dní od zakoupení]</p>
-            <a href="#kontakt-a-objednani">Darovat masáž</a>
-        </section>
-
-        <section id="reference">
+            <h3>Pracovní doba</h3>
+            <p>[pracovní doba]</p>
+            <h3>Způsoby platby</h3>
+            <p>[jak platit (hotovost, QR platba)]</p>
+            <!-- bonus: klientka chtěla, aby si lidé mohli zvolit přibližné termíny a časy, ona pak potvrdí např. do 1–2 dnů -->
             <h2>Reference</h2>
             <!-- tady nějak udělat, aby šlo přidávání referencí (to bude asi těžké, řešit až ke konci) -->
-        </section>
-
-        <section id="galerie">
-            <h2>Galerie</h2>
-            <div id="maserna">
-                <!-- fotky vnitřku a venku -->
-            </div>
-            <div class="moje-fotky">
-                <!-- fotky, jak pracuje a dělá ty konkrétní masáže -->
-            </div>
-            <div id="certifikaty">
-                <!-- fotky všech certifikátů -->
-            </div>
         </section>
 
         <section id="kontakt-a-objednani">
@@ -109,18 +107,11 @@
             <a href="tel:+[telefon]">[telefon]</a>
             <a href="mailto:[mail]">[mail]</a>
             <a href="https://wa.me/[číslo]">[whatsapp]</a>
+            <a href="sms:+[číslo]">[SMS]</a>
 
             <h3>Kde nás najdete</h3>
-            <p>[kde se nachází a jak se k ní dojít do masérny]</p> <!-- tohle je ta adresa! -->
+            <p>[kde se nachází a jak k ní dojít do masérny, vchod zezadu, blízko OC Westfield Chodov...]</p> <!-- tohle je ta adresa! -->
             <p>[mapa]</p> <!-- mapa přes iframe -->
-
-            <h3>Pracovní doba</h3>
-            <p>[pracovní doba]</p>
-            <!-- bonus: klientka chtěla, aby si lidé mohli zvolit přibližné termíny a časy, ona pak potvrdí např. do 1–2 dnů -->
-
-            <h3>Dárkový poukaz</h3>
-            <p>[pro uplatnění dárkového poukazu...]</p>
-            <button class="darkovy-poukaz">Dárkový poukaz</button>
         </section>
     </main>
 

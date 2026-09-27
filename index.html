@@ -4,18 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="[Doplnit!!!!]">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@400;500;600;700;800&family=Marcellus&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <title>Zdravotní masáže Chodov</title>
 </head>
 <body>
     <header>
         <a href="#"><img src="" alt="obrázek loga">[obrázek loga]</a> <!-- tady přece bude to logo -->
+        <button class="hamburger">☰</button>
         <nav>
-            <a href="#proc-prijit-ke-mne">Proč přijít zrovna ke mně</a>
+            <a href="#proc-prijit-ke-mne">Proč přijít ke mně</a>
             <a href="#masaze-a-cenik">Masáže a ceník</a>
-            <a href="#prakticke-info">Praktické informace a reference</a>
-            <a href="#kontakt-a-objednani">Kontakt a objednání</a>
-            <a href="#kontakt-a-objednani">OBJEDNAT SE</a> <!-- klientka chtěla výrazné objednat se -->
+            <a href="#prakticke-info">Praktické informace</a>
+            <a href="#reference">reference</a>
+            <a href="#kontakt-a-objednani">Kontakt</a>
+            <a href="#kontakt-a-objednani" class="cta-tlacitko">OBJEDNAT SE</a> <!-- klientka chtěla výrazné objednat se -->
         </nav>
     </header>
 
@@ -23,7 +28,7 @@
         <section id="proc-prijit-ke-mne">
             <h1>Zdravotní masáže Chodov</h1>
             <p>[jeden krásný citát/zajímavost]</p>
-            <a href="#kontakt-a-objednani" class="objednat-se">Objednat se</a>
+            <a href="#kontakt-a-objednani" class="jine-odkazy">Objednat se</a>
             <p>[jak se objednat: přes telefon nebo e-mail]</p>
             <p>[kdy je otevřeno]</p>
             <h2>Moje zkušenosti jako masérka</h2>
@@ -32,7 +37,7 @@
             <img src="" alt="fotka-prostoru-zevnitr">
             <p>[další krásný citát/zajímavost, např.: že hůř vidí, ale zato má skvělý hmat pohnaný 23 lety zkušeností, který najde napjatá místa v těle]</p>
             <h3>Certifikáty</h3>
-            <a href="#certifikaty">Zobrazit všechny certifikáty</a>
+            <a href="#certifikaty" class="jine-odkazy">Zobrazit všechny certifikáty</a>
             <article id="certifikaty">
                 <img src="" alt="fotky-certifikátů"> <!-- pár certifikátů: 1–3 + pak tlačítko "vidět víc", které ukáže zbytek -->
             </article>
@@ -98,16 +103,16 @@
             <h3>Způsoby platby</h3>
             <p>[jak platit (hotovost, QR platba)]</p>
             <!-- bonus: klientka chtěla, aby si lidé mohli zvolit přibližné termíny a časy, ona pak potvrdí např. do 1–2 dnů -->
-            <h2>Reference</h2>
+            <h2 id="reference">Reference</h2>
             <!-- tady nějak udělat, aby šlo přidávání referencí (to bude asi těžké, řešit až ke konci) -->
         </section>
 
         <section id="kontakt-a-objednani">
             <h2>Kontakt</h2>
-            <a href="tel:+[telefon]">[telefon]</a>
-            <a href="mailto:[mail]">[mail]</a>
-            <a href="https://wa.me/[číslo]">[whatsapp]</a>
-            <a href="sms:+[číslo]">[SMS]</a>
+            <a href="tel:+[telefon]">[telefon]</a><br>
+            <a href="mailto:[mail]">[mail]</a><br>
+            <a href="https://wa.me/[číslo]">[whatsapp]</a><br>
+            <a href="sms:+[číslo]">[SMS]</a><br>
 
             <h3>Kde nás najdete</h3>
             <p>[kde se nachází a jak k ní dojít do masérny, vchod zezadu, blízko OC Westfield Chodov...]</p> <!-- tohle je ta adresa! -->

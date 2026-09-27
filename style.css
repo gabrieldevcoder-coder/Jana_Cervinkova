@@ -1,0 +1,110 @@
+:root{
+    /* --barva-hlavni: ;  */
+    --barva-sekce1: white;
+    --barva-sekce2: rgb(237, 183, 192);
+    --barva-text: rgb(15, 13, 13);
+    --mezera: 1.5rem;
+    --barva-header: rgba(48, 250, 250, 0.8);
+    --barva-odkazu: rgb(0, 0, 0);
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{  
+    font-family: "Marcellus", serif;
+    font-weight: 400;
+    line-height: 1.6;
+    color: var(--barva-text);
+}
+h1,h2,h3{
+    font-weight: 800;
+}
+header{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    position:sticky;
+    top: 0;
+    background-color: var(--barva-header);
+    padding: 1rem var(--mezera);
+}
+header img{
+    height: 50px;
+    width:auto;
+}
+nav{ 
+    display: none; 
+    flex-direction: column;
+    gap: var(--mezera);
+    position: absolute;
+    top:100%;
+    left:auto; /*naschval auto nechci to mit pres celou obarzovku*/
+    right:0;
+    background-color: var(--barva-header);
+    padding: var(--mezera);
+}
+nav.otevrene{
+    display:flex;
+}
+
+nav a{
+    text-decoration: none;
+    color:var(--barva-odkazu);
+    padding: 0.5rem 1rem;
+    border-radius: 7px;
+    transition: all 0.2s;
+    border: 1px solid black;
+    border-color: transparent;
+
+}
+nav a:active,
+nav a:hover{
+    border-color: black;
+    transform:scale(1.05);
+
+}
+.cta-tlacitko{
+    background-color: rgb(21, 187, 21);
+}
+.jine-odkazy{
+    text-decoration: none;
+}
+.hamburger{
+    background:none;
+    border: 1px solid black;
+    border-color: transparent;
+    font-size: 1.8rem;
+    cursor: pointer;
+    color: var(--barva-text);
+    padding: 0.25rem 0.5rem;
+}
+.hamburger:hover,
+.hamburger:active{
+    opacity:0.5;
+        border-color: black;
+        border-radius: 0.5rem;
+}
+section{
+    padding: .5rem;
+    max-width: 1100px;
+    margin:0 auto;
+}
+
+
+@media(min-width: 900px){
+    .hamburger{
+        display:none;
+    }
+    nav{
+        display:flex;
+        flex-direction:row;
+        position:static;
+        padding: 0;
+        background-color: transparent;
+    }
+}

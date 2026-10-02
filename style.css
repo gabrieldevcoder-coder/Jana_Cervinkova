@@ -1,7 +1,7 @@
 :root{
     /* --barva-hlavni: ;  */
-    --barva-sekce1: rgba(250, 195, 195, 0.951);
-    --barva-sekce2: rgb(240, 149, 149);
+    --barva-sekce1: rgba(239, 236, 185, 0.266);
+    --barva-sekce2: rgba(242, 204, 204, 0.249);
     --barva-text: rgb(15, 13, 13);
     --mezera: 1.5rem;
     --barva-header: rgb(252, 252, 252);
@@ -23,6 +23,10 @@ body{
 }
 h1,h2,h3{
     font-weight: 800;
+    margin-top: 0.8rem;
+}
+p{
+    margin-top: 0.8rem;
 }
 /* -------------------------------------hlavicka-------------------------------------------- */
 header{
@@ -32,11 +36,17 @@ header{
     position:sticky;
     top: 0;
     background-color: var(--barva-header);
-    padding: 1rem var(--mezera);
+    padding: 0.8rem var(--mezera);
+    border:1px solid rgba(94, 85, 85, 0.307);
+    max-height: 65px;
+    box-shadow:inset 0 2px 6px rgba(0, 0, 0, 0.2);
+
+
 }
 header img{
     height: 50px;
     width:auto;
+    
 }
 /* -------------------------------------------hamburger tlacitko-------------------------------------------- */
 nav{ 
@@ -76,6 +86,16 @@ nav a:hover{
 }
 .jine-odkazy{
     text-decoration: none;
+    padding: 0.5rem 1rem;
+    border-radius: 13px;
+    transition: all 0.2s;
+    border: 1px solid transparent;
+    border-color: transparent;
+}
+.jine-odkazy:active,
+.jine-odkazy:hover{
+    border-color: black;
+    transform:scale(1.05);
 }
 .hamburger{
     background:none;
@@ -98,9 +118,8 @@ img{
     max-width: 100%;
     border-radius: 20px;
 }
-/* jak udelat ty fotky klikaci?(jakoze kdyz na ne klikne tak se zvetsi na celou obrazovku, doporucujes to?) */
 .foto-profil{
-    width: 60%;
+    width: 90%;
     aspect-ratio: 3/4;
     object-fit: contain;
     padding: 0.3rem;
@@ -121,13 +140,25 @@ img{
 .skryte-certifikaty.zobrazit{
     display: block;
 }
-/* proc to nefunguje? */
 .vice-certifikatu{
     display: flex;
     grid-column: span 2;
     justify-self: center;
     justify-content: center;
     width: 80%;
+    background:none;
+    border: 1px solid black;
+    border-color: transparent;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: var(--barva-text);
+    padding: 0.25rem 0.5rem;
+}
+.vice-certifikatu:hover,
+.vice-certifikatu:active{
+    opacity:0.5;
+    border-color: black;
+    border-radius: 0.5rem;
 }
 /* -----------------------------------------sekce------------------------------------------- */
 section{
@@ -135,7 +166,24 @@ section{
     max-width: 1100px;
     margin:0 auto;
 }
+.sekce1{
+    background-color: var(--barva-sekce1);
+}
+.sekce2{
+    background-color: var(--barva-sekce2);
+}
+/* ---------------------------------------------Proc-Prijit-Ke-Mne-------------------------------------------------------------- */
 
+.profil{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+
+
+
+
+
+/* -----------------------------------------desktop----------------------------------------------------- */
 
 @media(min-width: 900px){
     .hamburger{

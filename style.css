@@ -38,15 +38,43 @@ header{
     background-color: var(--barva-header);
     padding: 0.8rem var(--mezera);
     border:1px solid rgba(94, 85, 85, 0.307);
-    max-height: 65px;
     box-shadow:inset 0 2px 6px rgba(0, 0, 0, 0.2);
 
 
 }
-header img{
-    height: 50px;
-    width:auto;
-    
+/* ------------------------------------Logo----------------------------------------------- */
+.logo {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    text-decoration: none;
+    flex-shrink: 0;
+}
+
+.logo:hover,
+.logo:focus-visible {
+    color: rgba(231, 73, 73, 0.637);
+}
+
+.logo-name {
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: var(--barva-text);
+    line-height: 1.2;
+    transition: color 1s;
+}
+
+.logo:hover .logo-name {
+    color: rgba(67, 62, 62, 0.637);
+}
+
+.logo-sub {
+    font-size: 0.8rem;
+    color:rgba(43, 147, 43, 0.595);
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    font-weight: 600;
+    line-height: 1.2;
 }
 /* -------------------------------------------hamburger tlacitko-------------------------------------------- */
 nav{ 
@@ -118,6 +146,11 @@ img{
     max-width: 100%;
     border-radius: 20px;
 }
+iframe{
+    display: block;
+    max-width: 100%;
+    border-radius: 10%;
+}
 .foto-profil{
     width: 90%;
     aspect-ratio: 3/4;
@@ -172,6 +205,18 @@ section{
 .sekce2{
     background-color: var(--barva-sekce2);
 }
+/* ----------------------------------------------article------------------------------------------------- */
+article{
+    border: 2px solid rgba(0, 0, 0, 0.49);
+    margin: 1rem;
+    margin-right: 0.05rem;
+    margin-left: 0.05rem;
+    border-radius: 10px;
+    padding:10px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
 /* ---------------------------------------------Proc-Prijit-Ke-Mne-------------------------------------------------------------- */
 
 .profil{
@@ -179,8 +224,11 @@ section{
     grid-template-columns: repeat(2,1fr);
 }
 
-
-
+/* -----------------------------------------------Dulezite info pred masazi -----------------------------------*/
+li{
+    margin:0.5rem;
+}
+/* -------------------------------------------------Prakticke informace-------------------------------------------- */
 
 
 /* -----------------------------------------desktop----------------------------------------------------- */

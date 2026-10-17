@@ -5,7 +5,7 @@
     --barva-text: rgb(15, 13, 13);
     --mezera: 1.5rem;
     --barva-header: rgb(252, 252, 252);
-    --barva-odkazu: rgb(0, 0, 0);
+    --barva-odkazu: rgba(27, 108, 6, 0.928);
 }
 *{
     box-sizing: border-box;
@@ -27,6 +27,14 @@ h1,h2,h3{
 }
 p{
     margin-top: 0.8rem;
+}
+a{
+    color: var(--barva-odkazu);
+    text-decoration: none;
+}
+footer{
+    background-color: rgb(39, 36, 36);
+    color: rgba(255, 255, 255, 0.7);
 }
 /* -------------------------------------hlavicka-------------------------------------------- */
 header{
@@ -230,7 +238,17 @@ li{
 }
 /* -------------------------------------------------Prakticke informace-------------------------------------------- */
 
+/* --------------------------------------------------------Kontakt ----------------------------------------------------- */
+.kontaktove-udaje{
+    text-decoration: none;
+    color: var(--barva-odkazu);
+}
 
+/* --------------------------------------footer---------------------------------------- */
+.footer-copy {
+  font-size: var(--fs-xs);
+  color: rgba(255, 255, 255, 0.4);
+}
 /* -----------------------------------------desktop----------------------------------------------------- */
 
 @media(min-width: 900px){

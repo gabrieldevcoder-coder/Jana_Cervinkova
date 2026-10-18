@@ -204,7 +204,6 @@ iframe{
 /* -----------------------------------------sekce------------------------------------------- */
 section{
     padding: 2rem;
-    max-width: 1100px;
     margin:0 auto;
 }
 .sekce1{
@@ -251,7 +250,7 @@ li{
 }
 /* -----------------------------------------desktop----------------------------------------------------- */
 
-@media(min-width: 900px){
+@media(min-width: 1000px){
     .hamburger{
         display:none;
     }
@@ -261,5 +260,62 @@ li{
         position:static;
         padding: 0;
         background-color: transparent;
+    }
+    img{
+        max-width: 100%;
+    }
+    .foto-profil{
+        max-width: 80%;
+    }
+    #certifikaty{
+        display:grid;
+        grid-template-columns: repeat(4,1fr);
+        gap: 0.5rem;
+    }
+    .profil{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+    }
+
+}
+@media(min-width: 1900px){
+    .hamburger{
+        display:none;
+    }
+    nav{
+        display:flex;
+        flex-direction:row;
+        position:static;
+        padding: 0;
+        background-color: transparent;
+    }
+    img{
+        max-width: 100%;
+    }
+    .foto-profil{
+        max-width: 60%;
+    }
+    #certifikaty{
+        display:grid;
+        grid-template-columns: repeat(5,1fr);
+        gap: 0.5rem;
+    }
+
+    .profil{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+    }
+    .sekce1 p{
+        text-align: left;
+        max-width: 40%;
+    }
+    .masaze, 
+    .prakticke-info{
+        display: grid;
+        grid-template-columns: repeat(3,2fr);
+        padding: 5px;
+    }
+    article{
+        margin:6px;
     }
 }

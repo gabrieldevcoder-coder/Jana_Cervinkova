@@ -236,7 +236,27 @@ li{
     margin:0.5rem;
 }
 /* -------------------------------------------------Prakticke informace-------------------------------------------- */
-
+.napsat-recenze{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+}
+.firmy-cz, 
+.google{
+    text-decoration: none;
+    color:var(--barva-odkazu);
+    padding: 0.5rem 1rem;
+    border-radius: 10px;
+    transition: all 0.2s;
+    border: 1px solid red;
+    color: red;
+    justify-content: center;
+    justify-self: baseline;
+    margin: 3px;
+}
+.google{
+    color: blue;
+    border-color: blue;
+}
 /* --------------------------------------------------------Kontakt ----------------------------------------------------- */
 .kontaktove-udaje{
     text-decoration: none;

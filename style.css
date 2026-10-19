@@ -296,6 +296,15 @@ li{
         display: grid;
         grid-template-columns: repeat(3,1fr);
     }
+    .masaze, 
+    .prakticke-info{
+        display: grid;
+        grid-template-columns: repeat(3,2fr);
+        padding: 5px;
+    }
+    article{
+        margin:6px;
+    }
 
 }
 @media(min-width: 1900px){
